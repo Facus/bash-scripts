@@ -1,8 +1,8 @@
 #!/bin/bash
 # Script en Bash creado por Facus
-#      www.soyfacus.com.ar
+#      <facundo@podhead.com.ar>
 #
-# Comprobar si un programa está instalado en Linux
+# Comprobar si un programa está instalado en sistemas GNU/Linux
 
 if [ -z $1 ]; then
 	echo "Error!"
@@ -11,9 +11,9 @@ if [ -z $1 ]; then
 fi
 
 if [ -x /usr/bin/$1 ] || [ -x /usr/sbin/$1 ] || [ -x /bin/$1 ] || [ -x /sbin/$1 ]; then
-	echo "El programa \"$1\" está instalado."
+	echo "El programa \"$1\" está instalado. =D"
 else
-	echo "No está instalado \"$1\"."
+	echo "\"$1\" no está instalado. :("
 	exit 1;
 fi
 exit 0;
